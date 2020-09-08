@@ -3,7 +3,6 @@ const path = require('path')
 const hbs = require('hbs')
 const geoCode = require('./utils/geocode')
 const foreCast = require('./utils/forecast')
-
 const app = express()
 
 const publicPath = path.join(__dirname, '../public')
