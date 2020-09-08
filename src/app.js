@@ -3,7 +3,9 @@ const path = require('path')
 const hbs = require('hbs')
 const geoCode = require('./utils/geocode')
 const foreCast = require('./utils/forecast')
+
 const app = express()
+const port = process.env.PORT || 3000
 
 const publicPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -76,6 +78,6 @@ app.get('*', (request, response) => {
     })
 })
 
-app.listen(8000, () => {
-    console.log('Server started and listening')
+app.listen(port, () => {
+    console.log('Server started and listening on ' + port)
 })
