@@ -2,6 +2,7 @@
 
 This Project is a weather web applictaion which allows you to get the weather data for a particular location
 It uses GeoLocation and OpenWeather to retrive location details and weather data
+Even if the entered location is mispelled it will detect the correct location
 
 You can have a demo of the application here: https://vsk-weather-application.herokuapp.com/
 Deployed on Herko
